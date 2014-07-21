@@ -1,0 +1,14 @@
+---
+site::roles::webserver::vhosts:
+  whilefork:
+    servername: whilefork.com
+    vhost_name: "_default_"
+    port: "80"
+    ip_based: true
+    docroot: "/var/www/whilefork.com/www"
+    docroot_owner: www-data
+    docroot_group: www-data
+    serveraliases:
+      - www.whilefork.com
+      - demo.whilefork.com
+    override: "All"
